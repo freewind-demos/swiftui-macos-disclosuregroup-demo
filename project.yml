@@ -11,6 +11,7 @@ targets:
   SwiftUIDisclosureGroupDemo:
     type: application
     platform: macOS
+    productName: SwiftUIDisclosureGroupDemo
     sources:
       - Sources
     settings:
@@ -21,3 +22,10 @@ targets:
         CODE_SIGN_STYLE: Manual
         DEVELOPMENT_TEAM: ""
         ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  SwiftUIDisclosureGroupDemo:
+    build:
+      targets:
+        SwiftUIDisclosureGroupDemo: all
+    run:
+      config: Debug
